@@ -1,0 +1,46 @@
+PS C:\Users\hyuma> mkdir git_challenge
+
+    ディレクトリ: C:\Users\hyuma
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/04/30     17:35                git_challenge
+
+
+PS C:\Users\hyuma> cd git_challenge
+PS C:\Users\hyuma\git_challenge> git init
+PS C:\Users\hyuma\git_challenge> ni hello_world.txt
+
+
+    ディレクトリ: C:\Users\hyuma\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/04/30     17:37              0 hello_world.txt
+
+
+PS C:\Users\hyuma\git_challenge> code hello_world.txt
+PS C:\Users\hyuma\git_challenge> git add .
+PS C:\Users\hyuma\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\Users\hyuma\git_challenge> git commit -m"最初のテキスト追加"
+[main (root-commit) 22d1d43] 最初のテキスト追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\hyuma\git_challenge> code hello_world.txt
+PS C:\Users\hyuma\git_challenge> git add .
+PS C:\Users\hyuma\git_challenge> git commit -m"日本語訳追加"
+[main 7ff5301] 日本語訳追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\hyuma\git_challenge> git log --oneline
+7ff5301 (HEAD -> main) 日本語訳追加
+22d1d43 最初のテキスト追加
